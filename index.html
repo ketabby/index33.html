@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شركة برمجه - KETABBY</title> 
+  <link rel="shortcut icon" href="image/logo2.jpg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background-color: #FFCCCC; /* Light red background */
+    }
+    .navbar {
+      background-color: #6A0DAD !important; /* Violet navbar */
+    }
+    .btn-primary {
+      background-color: #6A0DAD !important; /* Violet buttons */
+      border-color: #6A0DAD;
+    }
+    .btn-danger {
+      background-color: #D32F2F !important; /* Light red for danger buttons */
+      border-color: #D32F2F;
+    }
+    .news-ticker {
+      background-color: #6A0DAD; /* Violet background */
+      color: white;
+      padding: 10px;
+      overflow: hidden;
+      white-space: nowrap;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .news-ticker span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: ticker 10s linear infinite;
+    }
+    @keyframes ticker {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- News Ticker -->
+  <div class="news-ticker">
+    <span>🔥 خبر عاجل: أحدث التقنيات البرمجية متاحة الآن! | 🚀 عروض حصرية على خدماتنا! | 💡 احصل على استشارة مجانية اليوم! </span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">KETABBY</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="#">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#about">من نحن</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#services">خدماتنا</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">اتصل بنا</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5 pt-5">
+    <h1 class="text-center text-dark">مرحبًا بك في KETABBY</h1>
+    <p class="text-center text-secondary">نحن نقدم أفضل الحلول البرمجية لتطوير أعمالك.</p>
+    <div class="text-center">
+      <button class="btn btn-primary">تواصل معنا</button>
+      <button class="btn btn-danger">المزيد من التفاصيل</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
